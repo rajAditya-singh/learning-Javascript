@@ -1,4 +1,8 @@
-// const userEmail = []
+//falsy values = false, 0, -0, bigint 0n, "", null, undefined, NaN.
+//Truthy values = "0", 'false', " ", [], {}, function(){}
+
+
+const userEmail = " "
 // if (userEmail) {
 //     console.log("Got user email");
 // }
@@ -6,18 +10,18 @@
 //     console.log("Don't have user email");
 // }
 
-//falsy values = false, 0, -0, bigint 0n, "", null, undefined, NaN.
 
-//Truthy values = "0", 'false', " ", [], {}, function(){}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 // if (userEmail.length === 0){
 //     console.log("Array is empty");
 // }
 
-// const empObj = {}
-// if (Object.keys(empObj).length === 0) {
-//     console.log("Object is empty");
-// }
+const empObj = {}
+if (Object.keys(empObj).length === 0) {
+    console.log("Object is empty");
+}
 
 //Nullish Coalescing Operator (??) : null undefined
 // let val1;
