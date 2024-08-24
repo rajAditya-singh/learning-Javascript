@@ -1,46 +1,150 @@
-.container {
-  width: 575px;
-  height: 825px;
-
-  background-color: #797978;
-  padding-left: 30px;
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background */
+  transition: background-color 0.5s ease; /* Smooth transition for background color change */
 }
-#height,
-#weight {
-  width: 150px;
-  height: 25px;
-  margin-top: 30px;
+
+/* Navigation Styling */
+nav {
+  background-color: #333; /* Dark background for nav */
+  color: #fff; /* White text color */
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and shadow */
+}
+
+nav:hover {
+  background-color: #444; /* Slightly lighter on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for link color and transform */
+}
+
+nav a:hover {
+  color: #f0f0f0; /* Change link color on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  animation: fadeIn 1s ease-out; /* Animation for fading in the container */
+}
+
+/* Header Styling */
+h1 {
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease-out; /* Animation for sliding in the header */
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  margin: 10px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+form p:hover {
+  background-color: #f9f9f9; /* Light background on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+label {
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for label color */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transition for border, shadow, and transform */
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+  transform: scale(1.02); /* Slight zoom effect on focus */
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff; /* Blue background for button */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transition for button background, transform, and shadow */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Results and Weight Guide Styling */
+#results {
+  margin-top: 20px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease-out forwards; /* Animation for fading in results */
 }
 
 #weight-guide {
-  margin-left: 75px;
-  margin-top: 25px;
-}
-
-#results {
-  font-size: 35px;
-  margin-left: 90px;
   margin-top: 20px;
-  color: rgb(241, 241, 241);
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background for the guide */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1.5s ease-out forwards; /* Animation for fading in weight guide */
 }
 
-button {
-  width: 150px;
-  height: 35px;
-  margin-left: 90px;
-  margin-top: 25px;
-  background-color: #fff;
-  padding: 1px 30px;
-  border-radius: 8px;
-  color: #212121;
-  text-decoration: none;
-  border: 2px solid #212121;
-
-  font-size: 25px;
+#weight-guide h3 {
+  margin-top: 0;
 }
 
-h1 {
-  padding-left: 15px;
-  padding-top: 25px;
-  
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
