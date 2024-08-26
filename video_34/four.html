@@ -11,21 +11,40 @@
     </ul>
 </body>
 <script>
-    function languageName(langName) {
-        const li = document.createElement('li')
-        li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
-    }
-    languageName("python")
-    languageName("C++")
-    // optimize code
-    function optname(languagenames) {
-        const li=  document.createElement('li')
-        li.appendChild(document.createTextNode(languagenames))
-        document.querySelector('.language').appendChild(li)
-    }
-    optname("JAVA")
-    optname("C#.NET")
+
+function addlanguage(langName) {
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li)
+}
+addlanguage('Python')
+addlanguage('Typescript')
+
+//optimize code
+function addoptilanguage(langname) {
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li)
+}
+addoptilanguage("GOLANG")
+
+
+//EDIT
+const secondlang = document.querySelector('li:nth-child(2)')
+// secondlang.innerHTML = "MOJO"
+const newli = document.createElement('li')
+newli.textContent = "Mojo"
+// secondlang.replaceWith("Mojo")
+secondlang.replaceWith(newli)
+
+//edit
+const firstlang = document.querySelector("li:nth-child(1)");
+firstlang.outerHTML = '<li>Java</li>';
+
+//Remove
+const lastlang = document.querySelector("li:last-child")
+lastlang.remove()
+>>>>>>> 321c106a1f12640ac7e07a4085c259f93383f7bb
 
     const secondlang = document.querySelector('li:nth-child(2)')
     const newli = document.createElement('li')
