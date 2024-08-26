@@ -16,9 +16,8 @@
         li.innerHTML = `${langName}`
         document.querySelector('.language').appendChild(li)
     }
-
     languageName("python")
-
+    languageName("C++")
     // optimize code
     function optname(languagenames) {
         const li=  document.createElement('li')
@@ -26,6 +25,11 @@
         document.querySelector('.language').appendChild(li)
     }
     optname("JAVA")
+    optname("C#.NET")
 
+    const secondlang = document.querySelector('li:nth-child(2)')
+    const newli = document.createElement('li')
+    li.appendChild(document.createTextNode("MOJO"))
+    document.querySelector('.language').appendChild(li)
 </script>
 </html>
