@@ -18,9 +18,11 @@
    </div>
 </body>
 <script>
-// document.getElementById('owl').onclick = function () {
-//     alert('OWL Clicked')
-// }
+document.getElementById('owl').onclick = function (e) {
+    // alert('OWL Clicked')
+    console.log(e);
+    console.log(e.toElement);
+}
 
 //types, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget,
 //clientX, clientY, screenX, screenY
@@ -41,19 +43,19 @@
 //     console.log("Google clicked");
 // }, false)
 
-document.querySelector('#images').addEventListener('click', function(e){
-//   console.log(e);
-//   console.log(e.target);
-    console.log(e.target.tagName);
-    if (e.target.tagName === "IMG") {
-        console.log(e.target.id);
-        let removeIt = e.target.parentNode
-        removeIt.remove()
-    }
+// document.querySelector('#images').addEventListener('click', function(e){
+// //   console.log(e);
+// //   console.log(e.target);
+//     console.log(e.target.tagName);
+//     if (e.target.tagName === "IMG") {
+//         console.log(e.target.id);
+//         let removeIt = e.target.parentNode
+//         removeIt.remove()
+//     }
 
 // removeIt.parentNode.removeChild(removeIt)
     
-}, false)
+// }, false)
 
 
 </script>
