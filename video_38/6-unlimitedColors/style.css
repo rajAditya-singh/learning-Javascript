@@ -11,8 +11,8 @@
     /* gap: 12px; */
     background-color: #fff;
     padding: 10px;
-    border-radius: 5px;
-    border: 2px solid black;
+    /* border-radius: 5px; */
+    border: 2px solid ;
 }
 
 #content{
