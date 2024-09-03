@@ -22,6 +22,6 @@ object literal
 
 ## 4 pillars
 -Abstraction
--Encapsulation
+-Encapsulationa
 -Inheritance
 -Polymorphism
