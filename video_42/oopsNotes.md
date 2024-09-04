@@ -6,14 +6,14 @@ structure of code.
 
 ## Object
 - collection of properties and method
--variables functions
+- variables functions
 
 ## why use oops
 
 ## parts of oops
-object literal
+Object literal
 
--constructor function
+- constructor function
 -Prototypes
 -Classes
 -Instances(New, this)
@@ -25,3 +25,12 @@ object literal
 -Encapsulationa
 -Inheritance
 -Polymorphism
+
+
+## New keyword
+1 - An empty object is created called instance(New obj is created)
+2 - A constructor fucntion is called because of the new keyword
+    It packs all the data and give it user
+3 - All the aurgument is injected in the this keyword
+4 - Get in the function
+     

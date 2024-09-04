@@ -1,36 +1,36 @@
-//Object letrails
+//Object Litrals
+
 const user = {
-    username : "Aditya",
-    IslogedIn : true,
-    mail : "aditya@gmail.com",
-    
-    gotUserDetails: function () {
-        // console.log("Got userdetails from database");
-        // console.log(`Username : ${this.username}`);      
+    username:"Aditya",
+    logInCount : 8,
+    signedIn : true,
+    getUserDetails: function(){
+        // console.log(`Username : ${this.username}`);
         // console.log(this);
-          
     }
 }
-
 // console.log(user.username);
-// console.log(user.gotUserDetails());
+// console.log(user.getUserDetails());
 // console.log(this);
 
-//Constructor
-// const promiseOne = new promise(()=>{})
-    // This new keyword is constructor function
-    // used to create new instances with overwriting the previous one
+// Constructor function
+// const promiseOne = new Promise(()=>{})
+// const date = new date();
 
-// example
-function User(username, LoginCount, isLoggedIn) {
-    this.username = username;
-    this.LoginCount = LoginCount;
+function User(username, logInCount, isLoggedIn ) {
+    this.username = username
+    this.logInCount = logInCount
     this.isLoggedIn = isLoggedIn
 
-    // return this
+    this.greetings = function () {
+        console.log(`Welcome ${this.username}`);
+    }
+    return this
 }
+const userOne = new User("Adi", 8, true)
+// console.log(userOne)
+console.log(userOne.constructor);
 
-const userOne = new User("Raj", 9, true)
-const userTwo = new User("adi", 8, false)
-console.log(userOne);
-console.log(userTwo);
+const userTwo = new User("Raj",7, false)
+// console.log(userTwo)
+
