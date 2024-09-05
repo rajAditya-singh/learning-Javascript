@@ -26,3 +26,31 @@ Array.prototype.heyaditya = function(){
 // myHeros.aditya()
 myHeros.heyaditya()
 herosPower.heyaditya()
+
+
+// Inheritance
+
+const user = {
+    username:"aditya",
+    email:"adi@gmail.com"
+}
+
+const Teacher = {
+    makeVideos : true
+}
+
+const TeacherSupport = {
+    isAvailable : false
+}
+
+const TAsupport ={
+    makeAssignment : 'Js Assignment',
+    fullTime : true,
+
+    __proto__ : TeacherSupport
+}
+
+Teacher.__proto__ = user;
+
+// Mordern Syntax
+
