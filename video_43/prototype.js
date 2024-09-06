@@ -24,8 +24,8 @@ Array.prototype.heyaditya = function(){
 }
 // herosPower.aditya()
 // myHeros.aditya()
-myHeros.heyaditya()
-herosPower.heyaditya()
+// myHeros.heyaditya()
+// herosPower.heyaditya()
 
 
 // Inheritance
@@ -50,7 +50,20 @@ const TAsupport ={
     __proto__ : TeacherSupport
 }
 
-Teacher.__proto__ = user;
+// Teacher.__proto__ = user;
 
 // Mordern Syntax
 
+// Object.setPrototypeOf(TeacherSupport, Teacher)
+
+let anotherUserName = "Aditya Raj Singh      "
+
+String.prototype.trueLength = function(){
+    // console.log(`${this}`);
+    console.log(`True length of the name is : ${this.trim().length}`);
+}
+
+anotherUserName.trueLength();
+"Aditya    ".trueLength()
+"     Raj".trueLength()
+console.log();
