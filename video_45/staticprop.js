@@ -22,4 +22,4 @@ class Teacher extends user{
 
 const aditya = new Teacher("aditya", "adii@gmail.com")
 aditya.logMe();
-console.log(aditya.createId())
+// console.log(aditya.createId())
